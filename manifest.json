@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Github Header theme",
+  "description": "This extension overwrites the css on the Github header with a less eye-catching option. It's short, sweet and open source.",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "assets/icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "https://github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"], 
+      "js": ["index.js"],
+      "css" : ["index.css"]
+    }
+  ]
+}
