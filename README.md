@@ -6,6 +6,16 @@ I wasn't a big fan of the redesigned dark header for Github. So I figured I migh
 
 This is a chrome extension that adds a couple of classes to replace the styling of the header. This could likely be done even more easily without using JavaScript but I wasn't really feeling reading through google's docs when I wrote this.
 
+## Installation
+
+    Download the .crx file from this folder
+    Navigate chrome to chrome://extensions
+    Drop the crx file to the extension list
+
+## Issues
+
+- Since the styles are added with JavaScript, the header flashes dark before new styles are added.
+  - Could be fixed by simply overriding the existing classes.
 
 ## License to provide some content to this readme
 
